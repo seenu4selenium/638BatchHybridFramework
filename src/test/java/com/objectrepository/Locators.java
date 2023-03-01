@@ -10,4 +10,6 @@ public class Locators {
 	public final By fbLogin_PasswordEditbox = By.name("pass");
 	public final By fbLogin_LoginButton = By.name("login");
 
+	
+	
 }
