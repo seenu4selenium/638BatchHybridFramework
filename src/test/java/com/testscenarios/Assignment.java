@@ -8,10 +8,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.openqa.selenium.By;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 
-public class ClassTemplate extends CommonFunctions {
+public class Assignment extends CommonFunctions {
 
 	@Parameters("browserName")
 	@BeforeClass
@@ -32,13 +33,25 @@ public class ClassTemplate extends CommonFunctions {
 		driver.quit();
 	}
 
-	@AfterMethod//This method will repeat for each @Test block
+	@AfterMethod // This method will repeat for each @Test block
 	public void afterMethod(ITestResult res) throws Exception {
 		screenshotWithStatus(res);
 	}
 
 	@Test
-	public void f() {
-		// Develop the code from here
+	public void f() throws Exception {
+		driver.get("https://opencart-prf.exense.ch/");
+		Thread.sleep(2000);
+		clickByAnyLocator(By.xpath("//*[@id=\"content\"]/div[2]/div[2]/div/div[3]/button[1]/span"));
+		clickByAnyLocator(By.id("cart-total"));
+		clickByAnyLocator(By.xpath("//*[@id=\"cart\"]/ul/li[2]/div/p/a[2]/strong"));
+
+		
+		
+//		driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[2]/div/div[3]/button[1]/span")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.id("cart-total")).click();
+//		Thread.sleep(2000);
+//		driver.findElement(By.xpath("//*[@id=\"cart\"]/ul/li[2]/div/p/a[2]/strong")).click();
 	}
 }

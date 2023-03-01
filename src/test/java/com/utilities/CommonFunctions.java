@@ -168,20 +168,27 @@ public class CommonFunctions {
 	 * @throws Exception
 	 ************************/
 	public void clickByAnyLocator(By locator) throws Exception {
-		implicitWait(10);
-		WebElement element = driver.findElement(locator);
-		// Check your locator is displayed?
-		if (driver.findElements(locator).size() > 0) {
-			// Check your element is in enable state?
-			if (element.isEnabled()) {
-				// Click on Button/radiobutton/checkbox/Link...
-				highlightElement(element);
-				element.click();
+		//implicitWait(10);
+		try {
+			Thread.sleep(1000);
+			explicitWaitElementToBeClickable(locator, 10);
+			WebElement element = driver.findElement(locator);
+			// Check your locator is displayed?
+			if (driver.findElements(locator).size() > 0) {
+				// Check your element is in enable state?
+				if (element.isEnabled()) {
+					// Click on Button/radiobutton/checkbox/Link...
+					highlightElement(element);
+					element.click();
+				} else {
+					System.out.println("Given locator is not enable state on DOM(Current page***");
+				}
 			} else {
-				System.out.println("Given locator is not enable state on DOM(Current page***");
+				System.out.println("Given locator is not displayed on DOM(Current page***");
 			}
-		} else {
-			System.out.println("Given locator is not displayed on DOM(Current page***");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 
