@@ -41,7 +41,7 @@ import org.testng.annotations.Parameters;
 
 import com.objectrepository.Locators;
 
-public class CommonFunctions {
+public class CommonFunctions{
 	public static WebDriver driver;
 	public String screenshotPath;
 	public String className;
@@ -50,7 +50,7 @@ public class CommonFunctions {
 	public Actions actions;
 	public JavascriptExecutor js;
 
-	public String propertyFile = "QA_testdata.properties";
+	public String propertyFile = "QAtestdata.properties";
 	public String projectDir = System.getProperty("user.dir");
 
 	public Locators l = new Locators();

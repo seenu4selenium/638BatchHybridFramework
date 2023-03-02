@@ -2,42 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T20:30:17 CST" name="Default suite" finished-at="2023-02-28T20:30:28 CST" duration-ms="10354">
+  <suite started-at="2023-03-01T20:18:03 CST" name="Default suite" finished-at="2023-03-01T20:18:35 CST" duration-ms="32320">
     <groups>
     </groups>
-    <test started-at="2023-02-28T20:30:17 CST" name="Default test" finished-at="2023-02-28T20:30:28 CST" duration-ms="10354">
-      <class name="com.testscenarios.Assignment">
-        <test-method is-config="true" signature="crossBrowser(java.lang.String)[pri:0, instance:com.testscenarios.Assignment@17fc391b]" started-at="2023-02-28T20:30:17 CST" name="crossBrowser" finished-at="2023-02-28T20:30:19 CST" duration-ms="1877" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-03-01T20:18:03 CST" name="Default test" finished-at="2023-03-01T20:18:35 CST" duration-ms="32320">
+      <class name="com.testscenarios.JRIsignin">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:03 CST" name="openBrowser" finished-at="2023-03-01T20:18:05 CST" duration-ms="1922" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crossBrowser -->
-        <test-method signature="f()[pri:0, instance:com.testscenarios.Assignment@17fc391b]" started-at="2023-02-28T20:30:19 CST" name="f" finished-at="2023-02-28T20:30:27 CST" duration-ms="8071" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method signature="f()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:05 CST" name="f" finished-at="2023-03-01T20:18:35 CST" duration-ms="29825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.testscenarios.Assignment@17fc391b]" started-at="2023-02-28T20:30:27 CST" name="afterMethod" finished-at="2023-02-28T20:30:27 CST" duration-ms="186" status="PASS">
+        <test-method is-config="true" signature="takeScreenshotForEachTestCase(org.testng.ITestResult)[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:35 CST" name="takeScreenshotForEachTestCase" finished-at="2023-03-01T20:18:35 CST" duration-ms="402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=Assignment.f()[pri:0, instance:com.testscenarios.Assignment@17fc391b] output={null}]]]>
+                <![CDATA[[TestResult name=f status=SUCCESS method=JRIsignin.f()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.Assignment@17fc391b]" started-at="2023-02-28T20:30:27 CST" name="afterClass" finished-at="2023-02-28T20:30:28 CST" duration-ms="186" status="PASS">
+        </test-method> <!-- takeScreenshotForEachTestCase -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:35 CST" name="closeBrowser" finished-at="2023-03-01T20:18:35 CST" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.testscenarios.Assignment -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testscenarios.JRIsignin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
