@@ -8,10 +8,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.openqa.selenium.By;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 
-public class ClassTemplate extends CommonFunctions {
+public class TTD_DropdownValues extends CommonFunctions {
 
 	@Parameters("browserName")
 	@BeforeClass
@@ -38,7 +39,12 @@ public class ClassTemplate extends CommonFunctions {
 	}
 
 	@Test
-	public void f()throws Exception  {
-		// Develop the code from here
+	public void f() throws Exception {
+		driver.get("https://tirupatibalaji.ap.gov.in/#/registration");
+		Thread.sleep(6000);
+		//Get all the Country dropdown option values from the page
+		printAllDropdownValues(By.name("countryS"));
+		
+		
 	}
 }

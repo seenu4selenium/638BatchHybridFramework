@@ -2,35 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T20:18:03 CST" name="Default suite" finished-at="2023-03-01T20:18:35 CST" duration-ms="32320">
+  <suite started-at="2023-03-08T20:26:37 CST" name="Default suite" finished-at="2023-03-08T20:26:37 CST" duration-ms="428">
     <groups>
     </groups>
-    <test started-at="2023-03-01T20:18:03 CST" name="Default test" finished-at="2023-03-01T20:18:35 CST" duration-ms="32320">
-      <class name="com.testscenarios.JRIsignin">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:03 CST" name="openBrowser" finished-at="2023-03-01T20:18:05 CST" duration-ms="1922" status="PASS">
+    <test started-at="2023-03-08T20:26:37 CST" name="Default test" finished-at="2023-03-08T20:26:37 CST" duration-ms="428">
+      <class name="com.testscenarios.SeleniumDataBaseTesting">
+        <test-method is-config="true" signature="connectingToDatabase()[pri:0, instance:com.testscenarios.SeleniumDataBaseTesting@6c1a5b54]" started-at="2023-03-08T20:26:37 CST" name="connectingToDatabase" finished-at="2023-03-08T20:26:37 CST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="f()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:05 CST" name="f" finished-at="2023-03-01T20:18:35 CST" duration-ms="29825" status="PASS">
+        </test-method> <!-- connectingToDatabase -->
+        <test-method signature="getDataFromDataBase()[pri:0, instance:com.testscenarios.SeleniumDataBaseTesting@6c1a5b54]" started-at="2023-03-08T20:26:37 CST" name="getDataFromDataBase" finished-at="2023-03-08T20:26:37 CST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="takeScreenshotForEachTestCase(org.testng.ITestResult)[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:35 CST" name="takeScreenshotForEachTestCase" finished-at="2023-03-01T20:18:35 CST" duration-ms="402" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=JRIsignin.f()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getDataFromDataBase -->
+        <test-method is-config="true" signature="closingDatabaseConnection()[pri:0, instance:com.testscenarios.SeleniumDataBaseTesting@6c1a5b54]" started-at="2023-03-08T20:26:37 CST" name="closingDatabaseConnection" finished-at="2023-03-08T20:26:37 CST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- takeScreenshotForEachTestCase -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testscenarios.JRIsignin@2b30a42c]" started-at="2023-03-01T20:18:35 CST" name="closeBrowser" finished-at="2023-03-01T20:18:35 CST" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.testscenarios.JRIsignin -->
+        </test-method> <!-- closingDatabaseConnection -->
+      </class> <!-- com.testscenarios.SeleniumDataBaseTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

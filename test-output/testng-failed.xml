@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testscenarios.JRIsignin">
+      <class name="com.testscenarios.WaitsInSelenium">
         <methods>
+          <include name="crossBrowser"/>
           <include name="f"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.testscenarios.JRIsignin -->
+      </class> <!-- com.testscenarios.WaitsInSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
